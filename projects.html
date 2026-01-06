@@ -4,6 +4,49 @@
   <meta charset="UTF-8" />
   <title>Kathryn Hilbert | Learning and Development Professional</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    /* Container for the row of projects */
+    .projects-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px; /* space between items */
+      padding: 20px 0;
+    }
+
+    /* Each individual project block */
+    .project-block {
+      background: #fff; /* optional: white background for contrast */
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: var(--shadow-soft); /* optional: shadow */
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    /* Hover effect for projects */
+    .project-block:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Images inside project blocks */
+    .project-block img {
+      width: 100%;     /* fill the grid column */
+      height: auto;    /* keep original proportions */
+      display: block;
+      object-fit: cover; /* ensures the image looks good in its box */
+    }
+
+    /* Optional: headings and descriptions */
+    .project-heading {
+      font-weight: bold;
+      margin: 10px 0 5px;
+    }
+
+    .project-sub {
+      font-size: 0.9em;
+      padding: 0 10px 10px;
+    }
+  </style>
 </head>
 <body>
 
